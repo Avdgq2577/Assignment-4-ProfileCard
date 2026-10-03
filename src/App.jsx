@@ -1,4 +1,5 @@
 import "./App.css";
+import heroImage from "./assets/hero.png";
 
 function ProfileCard(props) {
   return (
@@ -26,7 +27,7 @@ function App() {
 
       <ProfileCard
         name="Avadhoot"
-        image="./assets/hero.png"
+        image={heroImage}
         description="Computer Science student interested in Java, React, Python and software development."
       />
 

@@ -1,16 +1,75 @@
-# React + Vite
+# Assignment 4 - React Profile Card
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A reusable user profile card component built with React and Vite, showcasing modular component architecture and prop passing.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+- **Live URL:** [https://Avdgq2577.github.io/Assignment-4-ProfileCard/](https://Avdgq2577.github.io/Assignment-4-ProfileCard/)
+- **Repository:** [https://github.com/Avdgq2577/Assignment-4-ProfileCard](https://github.com/Avdgq2577/Assignment-4-ProfileCard)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📌 Features
+- **Component-Based Architecture:** Modular, reusable `ProfileCard` child component.
+- **Props Passing:** Receives and displays dynamic `name`, `image`, and `description` props.
+- **Responsive Styling:** Centered card interface featuring circular avatar styling, drop-shadow, and responsive typography.
+- **Optimized Assets:** Asset bundling configured with Vite for seamless GitHub Pages asset resolution.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- **React (v19):** Functional components and props.
+- **Vite:** High-performance frontend build tool and dev server.
+- **CSS3:** Custom styles, card hover elevation, and flexbox centering.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Project Structure
+```text
+Assignment-4-ProfileCard/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml    # GitHub Actions workflow for GitHub Pages
+├── src/
+│   ├── assets/           # Profile avatar image
+│   ├── App.css           # Profile card and layout styling
+│   ├── App.jsx           # Main App and ProfileCard component
+│   └── main.jsx          # React DOM root entry point
+├── index.html            # Vite HTML template
+├── vite.config.js        # Vite build configuration (base: './')
+├── package.json          # Project dependencies & scripts
+└── README.md             # Project documentation
+```
+
+---
+
+## 💻 Getting Started Locally
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Avdgq2577/Assignment-4-ProfileCard.git
+   ```
+
+2. **Navigate to the directory:**
+   ```bash
+   cd Assignment-4-ProfileCard
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Start the local development server:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 🌐 Deployment
+Automated via **GitHub Actions** (`.github/workflows/deploy.yml`) on every push to `main`.
